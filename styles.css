@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.fab-fam {
+  width: 900px;
+  border: 1px solid rgba(204, 204, 204, 0.145);
+  /* margin: 15px auto; */
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+header {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.fab-fam section {
+  width: 900px;
+  /* border: 0.1px solid black; */
+  /* transform: skewy(-2deg); */
+}
+
+.projects {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.projects ul li {
+  list-style: none;
+  margin-bottom: 2px;
+}
+.projects ul li a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.projects ul li a:hover {
+  color: #d9aa5c;
+  opacity: 1;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #222;
+  width: 900px;
+  /* margin: 10px auto 5px auto; */
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container-footer {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.home-pg-footer {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.home-pg-footer:hover {
+  color: #d9aa5c;
+  cursor: pointer;
+}
+
+/* bonus css magic */
+
+.odin {
+  /* bonus styling for gif */
+  mix-blend-mode: multiply;
+}
+
+#odinWinkBtn {
+  /* bonus styling for gif */
+  mix-blend-mode: multiply;
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  left: 62.5em;
+  cursor: pointer;
+  background: none;
+}
+#odinWinkBtn:hover {
+  opacity: 0.7 !important;
+}
+
+
+
+/* ----------------------------------------------------------------------------------*/
+/*                            Responsive Design                                      */
+/* ----------------------------------------------------------------------------------*/
+
+/* ----------- Laptops Screens ----------- */
+@media screen 
+  and (min-device-width: 1800px) 
+  and (max-device-width: 3000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #odinWinkBtn {
+      left: 75em;
+    }
+
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape 320 - 409 */
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 409px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .fab-fam {
+    width: 330px;
+  }
+
+  .fab-fam section {
+    width: 100%;
+    /* border: 0.1px solid black; */
+    /* transform: skewy(-2deg); */
+  }
+
+.project-1 ul li a,
+.project-2 ul li a,
+.project-3 ul li a,
+.project-4 ul li a,
+.project-5 ul li a {
+  font-size: 15px;
+}
+
+footer {
+  width: 330px;
+}
+
+#odinWinkBtn {
+  bottom: 60px;
+  left: 15em;
+  transform: scale(.6);
+  cursor: pointer;
+  background: none;
+}
+
+}
+
+
+/* Portrait and Landscape 410-736 */
+@media only screen 
+  and (min-device-width: 410px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    
+    .fab-fam {
+      width: 380px;
+      /* margin: 10px auto; */
+    }
+  
+    .fab-fam section {
+      width: 100%;
+    }
+  
+  .project-1 ul li a,
+  .project-2 ul li a,
+  .project-3 ul li a,
+  .project-4 ul li a,
+  .project-5 ul li a {
+    font-size: 15px;
+  }
+  
+  footer {
+    width: 380px;
+    /* margin: 10px auto 10px auto; */
+  }
+    #odinWinkBtn {
+      bottom: 60px;
+      left: 16em;
+      transform: scale(.6);
+      cursor: pointer;
+      background: none;
+    }
+
+}
+
