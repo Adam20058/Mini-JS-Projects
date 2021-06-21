@@ -23,7 +23,7 @@ function onSpeak(e) {
 // Write what user speaks
 function writeMessage(msg) {
   msgEl.innerHTML = `
-    <div>You said: </div>
+    <div> <h3>You said: </h3></div>
     <span class="box">${msg}</span>
   `;
 }
@@ -34,13 +34,13 @@ function checkNumber(msg) {
 
   // Check if valid number
   if (Number.isNaN(num)) {
-    msgEl.innerHTML += '<div>That is not a valid number</div>';
+    msgEl.innerHTML += '<div> <h3> That is not a valid number </h3></div>';
     return;
   }
 
   // Check in range
   if (num > 100 || num < 1) {
-    msgEl.innerHTML += '<div>Number must be between 1 and 100</div>';
+    msgEl.innerHTML += '<div><h3>Number must be between 1 and 100 </h3></div>';
     return;
   }
 
@@ -52,9 +52,9 @@ function checkNumber(msg) {
       <button class="play-again" id="play-again">Play Again</button>
     `;
   } else if (num > randomNum) {
-    msgEl.innerHTML += '<div>GO LOWER</div>';
+    msgEl.innerHTML += '<div><h3> GO LOWER</h3></div>';
   } else {
-    msgEl.innerHTML += '<div>GO HIGHER</div>';
+    msgEl.innerHTML += '<div><h3>GO HIGHER</h3></div>';
   }
 }
 
