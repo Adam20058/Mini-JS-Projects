@@ -51,6 +51,10 @@ h3 {
   display: inline-block;
 }
 
+#tags {
+  text-align: center;
+}
+
 .tag.highlight {
   background-color: #273c75;
 }
